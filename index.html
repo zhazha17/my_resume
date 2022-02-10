@@ -26,6 +26,11 @@
         font-weight: normal;
       }
       a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+      h3 {
         color: #666;
       }
     </style>
@@ -84,7 +89,10 @@
       .projects > ol > li h3 {
         display: inline-block;
       }
-
+      #main {
+        width: 600px;
+        height: 300px;
+      }
       .skills > .wrapper {
         display: flex;
         justify-content: space-between;
@@ -108,6 +116,26 @@
       }
       .other ul li {
         margin-bottom: 5px;
+      }
+    </style>
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+        article {
+          width: auto;
+          height: auto;
+        }
+        .bio img {
+          display: none;
+        }
+        .skills .wrapper {
+          flex-direction: column;
+        }
+        #main {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -157,7 +185,7 @@
       <section class="skills">
         <h2>技能</h2>
         <div class="wrapper">
-          <div id="main" style="width: 600px; height: 300px"></div>
+          <div id="main"></div>
           <ul>
             <li>熟悉 HTML、CSS、JavaScript，并能进行项目开发</li>
             <li>了解 ES6 新特性；了解 jQuery 的基础用法</li>
