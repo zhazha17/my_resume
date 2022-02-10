@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+      article {
+        /* A4 纸的标准尺寸 */
+        width: 21cm;
+        min-height: 29.7cm;
+        background-color: #fff;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+      strong {
+        font-weight: normal;
+      }
+      a {
+        color: #666;
+      }
+    </style>
+    <style media="print">
+      body {
+        margin: 0;
+      }
+    </style>
+    <style>
+      article {
+        padding-top: 30px;
+      }
+      p {
+        margin: 0.3em 0;
+      }
+      h1 {
+        font-size: 33px;
+        margin-top: 0;
+      }
+      ol,
+      li {
+        list-style: none;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+      .bio {
+        position: relative;
+      }
+      .bio img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .projects p {
+        color: #666;
+      }
+      .projects strong {
+        color: blue;
+      }
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+      .projects > ol > li {
+        margin-bottom: 16px;
+      }
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
+
+      .skills > .wrapper > ul {
+        color: #666;
+      }
+      .skills > .wrapper strong {
+        color: blue;
+      }
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+      .other ul {
+        padding: 0;
+      }
+      .other ul li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1>文馨</h1>
+        <img src="./images/照片.jpg" width="100" height="120" />
+        <p>女 | 22岁 | 前端开发 | 河南鹤壁</p>
+        <p>手机：15524591860 | 微信：15524591860 | 邮箱：wx1123041022@163.com</p>
+      </section>
+      <section></section>
+      <section>
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2017年</time>~<time>2021年</time></span>
+          大连大学 通信工程 本科
+        </p>
+      </section>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>电商后台管理系统</h3>
+              <span>
+                <a href="#">源码链接</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>项目使用 <strong>Vue3</strong> / <strong>Vite</strong> / <strong>Vue-router4</strong> / <strong>Element UI</strong> / <strong>axios</strong> 等技术</p>
+            <p>电商后台管理系统用于管理用户账号、商品分类、商品信息、订单、数据统计等业务功能</p>
+          </li>
+          <li>
+            <header>
+              <h3>仿小米网站</h3>
+              <span>
+                <a href="#">源码链接</a>
+                <a href="#">项目预览</a>
+              </span>
+            </header>
+            <p>纯 html / css / JavaScript</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+          <div id="main" style="width: 600px; height: 300px"></div>
+          <ul>
+            <li>熟悉 HTML、CSS、JavaScript，并能进行项目开发</li>
+            <li>了解 ES6 新特性；了解 jQuery 的基础用法</li>
+            <li>熟悉使用 <strong>Vue2</strong> / <strong>Vue3</strong> 及 Vue-router，Vue-cli，Vite 和 Element UI 组件库</li>
+            <li>熟练使用 Npm，Webpack，Git 等工具</li>
+            <li>了解 Node.js、Ajax、Express 后端开发</li>
+          </ul>
+        </div>
+      </section>
+      <section class="other">
+        <h2>其他链接</h2>
+        <ul>
+          <li><a href="https://blog.csdn.net/wxbwcx?type=lately">我的博客</a></li>
+          <li><a href="https://gitee.com/zhazha17/dashboard/projects">我的 Gitee</a></li>
+        </ul>
+      </section>
+    </article>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.0/echarts.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
